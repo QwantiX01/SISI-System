@@ -1,0 +1,1 @@
+//TODO: create other tables and configuration for them
