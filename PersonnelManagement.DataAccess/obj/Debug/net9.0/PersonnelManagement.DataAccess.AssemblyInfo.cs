@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PersonnelManagement.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f7ab2e9c4dd6a8e640288c08af36b6c3565d981")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f85ccd0788b6d393560a13524efca6609c49795")]
 [assembly: System.Reflection.AssemblyProductAttribute("PersonnelManagement.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PersonnelManagement.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

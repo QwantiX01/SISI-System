@@ -1,1 +1,2 @@
 //TODO: create other tables and configuration for them
+//TODO: own validator

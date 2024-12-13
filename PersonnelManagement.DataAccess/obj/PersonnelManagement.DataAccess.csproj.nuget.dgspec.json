@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Job\\SISI-System\\PersonnelManagement.DataAccess\\PersonnelManagement.DataAccess.csproj": {}
+    "C:\\Users\\femoboy\\RiderProjects\\SiSi\\PersonnelManagement.DataAccess\\PersonnelManagement.DataAccess.csproj": {}
   },
   "projects": {
-    "D:\\Job\\SISI-System\\PersonnelManagement.DataAccess\\PersonnelManagement.DataAccess.csproj": {
+    "C:\\Users\\femoboy\\RiderProjects\\SiSi\\PersonnelManagement.DataAccess\\PersonnelManagement.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Job\\SISI-System\\PersonnelManagement.DataAccess\\PersonnelManagement.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\femoboy\\RiderProjects\\SiSi\\PersonnelManagement.DataAccess\\PersonnelManagement.DataAccess.csproj",
         "projectName": "PersonnelManagement.DataAccess",
-        "projectPath": "D:\\Job\\SISI-System\\PersonnelManagement.DataAccess\\PersonnelManagement.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
-        "outputPath": "D:\\Job\\SISI-System\\PersonnelManagement.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\femoboy\\RiderProjects\\SiSi\\PersonnelManagement.DataAccess\\PersonnelManagement.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\femoboy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\femoboy\\RiderProjects\\SiSi\\PersonnelManagement.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\femoboy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,8 +44,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net9.0": {
@@ -67,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\maxim\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

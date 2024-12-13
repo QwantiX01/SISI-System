@@ -9,7 +9,8 @@ public class EmployeeEntity
     public string Email { get; set; } = string.Empty;
     public string PhoneNumber { get; set; } = string.Empty;
     public string Address { get; set; } = string.Empty;
-    public string Department { get; set; } = string.Empty;
+    public Guid DepartmentId { get; set; }
+    public DepartmentEntity? Department { get; set; }  
     public string JobTitle { get; set; } = string.Empty;
     public List<string> Skills { get; set; } = [];
     public DateTime BirthDate { get; set; } = DateTime.MinValue;

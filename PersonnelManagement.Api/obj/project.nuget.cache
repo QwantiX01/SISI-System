@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "iDW4FaewjGE=",
+  "dgSpecHash": "PqzPP5MEtmY=",
   "success": true,
-  "projectFilePath": "D:\\Job\\SISI-System\\PersonnelManagement.Api\\PersonnelManagement.Api.csproj",
+  "projectFilePath": "C:\\Users\\femoboy\\RiderProjects\\SiSi\\PersonnelManagement.Api\\PersonnelManagement.Api.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\maxim\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
-    "C:\\Users\\maxim\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
-    "C:\\Users\\maxim\\.nuget\\packages\\scalar.aspnetcore\\1.2.53\\scalar.aspnetcore.1.2.53.nupkg.sha512"
+    "C:\\Users\\femoboy\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "C:\\Users\\femoboy\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\femoboy\\.nuget\\packages\\scalar.aspnetcore\\1.2.53\\scalar.aspnetcore.1.2.53.nupkg.sha512"
   ],
   "logs": []
 }
