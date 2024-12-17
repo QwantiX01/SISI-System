@@ -16,5 +16,5 @@ public class EmployeeEntity
     public DateTime BirthDate { get; set; } = DateTime.MinValue;
     public DateTime EmploymentDate { get; set; } = DateTime.MinValue;
     public DateTime DismissalDate { get; set; } = DateTime.MinValue;        
-    //TODO: Add Documents(noSQL), JobHistory (nullable), DepartmentEntity(new model)
+    //TODO: Add Documents(noSQL), JobHistory (nullable)
 }
