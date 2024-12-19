@@ -4,11 +4,11 @@ using PersonnelManagement.DataAccess.Models;
 
 namespace PersonnelManagement.DataAccess.Context;
 
-public class PersonnelDbContext : DbContext
+public sealed class PersonnelDbContext : DbContext
 {
     private readonly bool _test;
 
-    public PersonnelDbContext(bool test)
+    public PersonnelDbContext(bool test = false)
     {
         _test = test;
         Database.EnsureCreated();

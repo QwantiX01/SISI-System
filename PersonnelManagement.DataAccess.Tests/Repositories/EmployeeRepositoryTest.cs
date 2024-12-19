@@ -30,11 +30,12 @@ public class EmployeeRepositoryTest
     }
 
     [Test]
-    public async Task CreateEmployee_Success()
+    public async Task CreateAndGetEmployee_Success()
     {
-        var result = await _employeeRepository.CreateEmployeeAsync(new EmployeeEntity
+        var departmentId = Guid.NewGuid();
+        var testEmployee = new EmployeeEntity
         {
-            DepartmentId = Guid.NewGuid(),
+            DepartmentId = departmentId,
             FirstName = "Test",
             MiddleName = "Test",
             LastName = "Test",
@@ -46,15 +47,23 @@ public class EmployeeRepositoryTest
             BirthDate = DateTime.Now,
             EmploymentDate = DateTime.Now,
             DismissalDate = DateTime.Now
-        }, _id);
+        };
+
+        await _departmentRepository.CreateDepartmentAsync(
+            new DepartmentEntity(name: "Test", description: "Test", addresses: [], phones: [], emails: [],
+                employees: []), departmentId);
+
+        var createResult = await _employeeRepository.CreateEmployeeAsync(testEmployee, _id);
+        var getResult = await _employeeRepository.GetEmployeeByIdAsync(_id);
         
-        Assert.That(result.IsError, Is.False, string.Join(",", result.Errors));
+        Assert.That(getResult.IsError && createResult.IsError && !testEmployee.Equals(getResult.Value), Is.False,
+            string.Join(",", getResult.Errors, createResult.Errors));
     }
 
     [Test]
-    public async Task GetEmployeeById_Success()
+    public async Task GetEmployeeById_Failure()
     {
-        var result = await _employeeRepository.GetEmployeeByIdAsync(_id);
-        Assert.That(result.IsError, Is.False, string.Join(",", result.Errors));
+        var result = await _employeeRepository.GetEmployeeByIdAsync(Guid.Empty);
+        Assert.That(result.IsError, Is.True, string.Join(",", result.Errors));
     }
 }
