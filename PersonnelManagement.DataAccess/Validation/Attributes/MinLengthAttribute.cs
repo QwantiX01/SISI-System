@@ -10,10 +10,11 @@ public class MinLengthAttribute : Attribute
         MinLength = minLength;
     }
 
-    public bool IsValid(object value)
+    public bool IsValid(object? value)
     {
         if (value is string s)
             return s.Length > MinLength;
+
         throw new ArgumentException("Value is not a string");
     }
 }

@@ -10,10 +10,11 @@ public class MaxLengthAttribute : Attribute
         MaxLength = maxLength;
     }
 
-    public bool IsValid(object value)
+    public bool IsValid(object? value)
     {
         if (value is string s)
             return s.Length < MaxLength;
+
         throw new ArgumentException($"Value is not a string");
     }
 }

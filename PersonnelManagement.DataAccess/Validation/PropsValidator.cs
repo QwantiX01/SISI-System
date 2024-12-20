@@ -21,20 +21,21 @@ public class PropsValidator
                 switch (attribute)
                 {
                     case MaxLengthAttribute maxLengthAttribute:
-                        if (!maxLengthAttribute.IsValid(prop.GetValue(obj)!))
-                            errors.Add($"Value is longer than {maxLengthAttribute.MaxLength}");
+                        if (!maxLengthAttribute.IsValid(prop.GetValue(obj)))
+                            errors.Add($"Property {prop.Name}: Value is longer than {maxLengthAttribute.MaxLength}");
                         break;
                     case MinLengthAttribute minLengthAttribute:
-                        if (minLengthAttribute.IsValid(prop.GetValue(obj)!))
-                            errors.Add($"Value should be greater than {minLengthAttribute.MinLength}");
+                        if (!minLengthAttribute.IsValid(prop.GetValue(obj)))
+                            errors.Add(
+                                $"Property {prop.Name}: Value should be greater than {minLengthAttribute.MinLength}");
                         break;
                     case RegexAttribute regexAttribute:
-                        if (!regexAttribute.IsValid(prop.GetValue(obj)!))
-                            errors.Add("Regex is invalid");
+                        if (!regexAttribute.IsValid(prop.GetValue(obj)))
+                            errors.Add($"Property {prop.Name}: Regex is invalid");
                         break;
                     case IsNotNullAttribute isNotNullAttribute:
                         if (!isNotNullAttribute.IsValid(prop.GetValue(obj)))
-                            errors.Add("Value is required");
+                            errors.Add($"Property {prop.Name}: Value is required");
                         break;
                 }
         }
